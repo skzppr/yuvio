@@ -1,0 +1,12 @@
+{
+  "name": "yt-music-presence",
+  "version": "1.2.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs tests/extension.test.mjs tests/sources.test.mjs",
+    "preview": "node scripts/preview.mjs",
+    "verify:package": "node scripts/package-smoke.mjs",
+    "build": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build.ps1"
+  }
+}
